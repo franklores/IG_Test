@@ -7,7 +7,7 @@ using global::OrderProcessor.Domain.Orders;
 using System.Collections.Generic;
 using System.Linq;
 
-public class OrderProcessorService
+public class OrderProcessorService : IOrderProcessorService
 {
     private readonly SortedSet<IOrderRule> _ruleset;
 
